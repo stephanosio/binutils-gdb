@@ -4816,6 +4816,11 @@ hex_float (int float_type, char *bytes)
 
   switch (float_type)
     {
+    case 'h':
+    case 'H':
+      length = 2;
+      break;
+
     case 'f':
     case 'F':
     case 's':
